@@ -1,0 +1,211 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: azure;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Define a altura mínima da tela */
+}
+
+.App{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.addProduct{
+  background-color: #333333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+}
+
+.addProduct h1{
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #8bb4cc;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.addProduct label{
+  display: flex;
+  flex-direction: column;
+}
+
+.addProduct input{
+  margin-bottom: 10px;
+  background-color: #333333;
+  border: none;
+  border-bottom: 2px solid #8bb4cc;
+  padding: 2px 4px;
+  color: whitesmoke;
+  outline: none;
+}
+
+.addProduct input[type=submit]{
+  background-color: royalblue;
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.addProduct input[type=submit]:hover{
+  background-color: #333333;
+  border: 1px solid #8bb4cc;
+  color: #8bb4cc;
+}
+
+.addProduct form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.listProduct{
+  background-color: #8bb4cc;
+  text-align: center;
+  padding: 15px;
+}
+
+.listProduct h1{
+  background-color: #333333;
+  color: #8bb4cc;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+
+.listProduct .table-container {
+  max-height: 300px; /* Defina a altura máxima conforme necessário */
+  overflow: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo excede a altura máxima */
+  width: 100%;
+}
+
+.listProduct .productTable{
+  background-color: #333333;
+  width: 100%;
+}
+
+.productTable thead{
+  background-color: #8bb4cc;
+  color: #333333;
+  position: sticky;
+  top: 0;
+}
+
+.listProduct .productTable tbody {
+  background-color: #8bb4cc;
+}
+
+.listProduct .productTable td{
+  color: #8bb4cc;
+  background-color: #333333;
+  padding: 2px;
+  width: 185px;
+}
+
+.listProduct .containerLoading{
+  display: flex;
+  justify-content: center;
+}
+
+.listProduct .loading{
+  animation: is-rotating 1s infinite;
+  border: 8px solid #333333;
+  border-top-color: grey;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.listProduct .productTable td button{
+  background: none;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.listProduct .productTable td button i{
+  color: rgb(247, 75, 75);
+  cursor: pointer;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* RESPOSIVIDADE */
+/* Estilos para dispositivos com largura máxima de 767px (como smartphones) */
+@media only screen and (max-width: 767px) {
+  .center {
+    min-height: auto; /* Remove a altura mínima da tela em dispositivos móveis */
+  }
+
+  .addProduct{
+    width: 100%;
+  }
+
+  .listProduct{
+    width: 100%;
+  }
+  
+  .listProduct .table-container {
+    width: 100%;
+  }
+}
+
+/* Estilos para tablets em modo retrato e paisagem */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .addProduct{
+    max-width: 100%;
+  }
+
+  .listProduct{
+    max-width: 100%;
+  }
+  
+  .listProduct .table-container {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+  .addProduct{
+    width: 85%;
+  }
+
+  .listProduct{
+    width: 100%;
+  }
+  
+  .listProduct h1{
+    font-size: 25px;
+  }
+  
+  .listProduct .table-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Mouse",
+      "price": 75,
+      "category": "Eletrônico"
+    },
+    {
+      "id": 2,
+      "name": "Estojo",
+      "price": 25,
+      "category": "Ferramenta de escritório"
+    },
+    {
+      "name": "Camiseta",
+      "price": "20.9",
+      "category": "Roupa",
+      "id": 4
+    },
+    {
+      "name": "Conjunto de caneta",
+      "price": "8",
+      "category": "Ferramenta de escritório",
+      "id": 5
+    },
+    {
+      "name": "Monitor",
+      "price": "450",
+      "category": "Eletrônico",
+      "id": 6
+    },
+    {
+      "name": "Calça",
+      "price": "60",
+      "category": "Roupa",
+      "id": 7
+    },
+    {
+      "name": "Caderno",
+      "price": "35",
+      "category": "Ferramenta de escritório",
+      "id": 9
+    },
+    {
+      "name": "PlayStation 5",
+      "price": "4000",
+      "category": "Eletrônico",
+      "id": 10
+    },
+    {
+      "name": "Livro",
+      "price": "50.90",
+      "category": "Ferramenta de escritório",
+      "id": 11
+    },
+    {
+      "name": "Colchonete",
+      "price": "100",
+      "category": "Móveis",
+      "id": 12
+    }
+  ]
+}

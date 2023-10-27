@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sistema-de-cadastro-de-produto/static/css/main.0cbb8cfc.css",
+    "main.js": "/sistema-de-cadastro-de-produto/static/js/main.c838b953.js",
+    "index.html": "/sistema-de-cadastro-de-produto/index.html",
+    "main.0cbb8cfc.css.map": "/sistema-de-cadastro-de-produto/static/css/main.0cbb8cfc.css.map",
+    "main.c838b953.js.map": "/sistema-de-cadastro-de-produto/static/js/main.c838b953.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0cbb8cfc.css",
+    "static/js/main.c838b953.js"
+  ]
+}
